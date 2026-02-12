@@ -1,20 +1,24 @@
 "use client";
 
-import { FiDownload, FiFileText } from "react-icons/fi";
+import { FiDownload, FiFileText, FiSun, FiLifeBuoy } from "react-icons/fi";
 
 export default function DownloadSection() {
     const downloads = [
         {
             title: "Achtsamkeitsübung",
             description: "Eine einfache Übung für mehr Ruhe im Alltag.",
-            filename: "achtsamkeitsuebung.pdf",
+            filename: "achtsamkeitsuebung.html",
             link: "/downloads/achtsamkeitsuebung.html",
+            buttonText: "Kostenlos nutzen",
+            Icon: FiSun,
         },
         {
             title: "Notfall-Guide",
             description: "Wichtige Kontakte und Strategien für Krisensituationen.",
-            filename: "notfall-guide.pdf",
+            filename: "notfall-guide.html",
             link: "/downloads/notfall-guide.html",
+            buttonText: "Guide öffnen",
+            Icon: FiLifeBuoy,
         },
     ];
 
@@ -31,7 +35,7 @@ export default function DownloadSection() {
                             Kostenlose <span className="text-gradient">Unterstützung</span>
                         </h2>
                         <p className="text-xl text-gray-600 font-light max-w-2xl mx-auto">
-                            Kleine Hilfsmittel für Ihren Alltag zum Herunterladen.
+                            Kleine Hilfsmittel für Ihren Alltag.
                         </p>
                     </div>
 
@@ -60,8 +64,8 @@ export default function DownloadSection() {
                                     rel="noopener noreferrer"
                                     className="mt-auto w-full bg-cta text-white py-4 px-6 rounded-full font-medium flex items-center justify-center gap-3 hover:bg-white hover:text-cta border-2 border-cta transition-all shadow-md hover:shadow-cta/30 transform hover:-translate-y-0.5"
                                 >
-                                    <FiDownload className="text-lg" />
-                                    PDF Herunterladen
+                                    <item.Icon className="text-xl" />
+                                    {item.buttonText}
                                 </a>
                             </div>
                         ))}
