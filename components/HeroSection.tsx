@@ -34,53 +34,54 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/5 z-10" />
 
             {/* Content */}
-            <div className="relative z-20 container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center h-full pt-20">
-                <div className="text-left animate-slide-up bg-white/60 backdrop-blur-xl p-12 rounded-[2.5rem] border border-white/60 shadow-2xl transition-all duration-300 hover:shadow-3xl hover:bg-white/70">
-                    <span className="inline-block py-1.5 px-4 rounded-full bg-cta/10 text-cta font-medium text-base mb-8 border border-cta/20 tracking-wide">
+            <div className="relative z-20 container mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center h-full pt-24 md:pt-20">
+                <div className="text-left animate-slide-up bg-white/80 md:bg-white/60 backdrop-blur-xl p-6 sm:p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-white/60 shadow-2xl transition-all duration-300 hover:shadow-3xl hover:bg-white/70">
+                    <span className="inline-block py-1 sm:py-1.5 px-3 sm:px-4 rounded-full bg-cta/10 text-cta font-medium text-sm sm:text-base mb-6 md:mb-8 border border-cta/20 tracking-wide">
                         Psychotherapie Paternoster
                     </span>
 
-                    <h1 className="text-4xl md:text-5xl font-display mb-8 leading-tight text-gray-900 drop-shadow-sm">
-                        Ein geschützter Raum für <span className="text-primary font-bold">Ihre Entwicklung</span>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-display mb-6 md:mb-8 leading-tight text-gray-900 drop-shadow-sm">
+                        Ein geschützter Raum für <br className="hidden md:block" />
+                        <span className="text-primary font-bold">Ihre Entwicklung</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl mb-10 text-gray-800 font-light leading-loose">
+                    <p className="text-lg sm:text-xl md:text-2xl mb-8 md:mb-10 text-gray-800 font-light leading-relaxed md:leading-loose">
                         Verstehen Sie alte Muster. Finden Sie neue Wege. Professionelle Begleitung in einem warmen, klaren und direkten Umfeld.
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-6 mb-10">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 md:mb-10">
                         <a
                             href="#booking"
-                            className="bg-cta text-white px-10 py-5 rounded-2xl text-lg font-medium hover:bg-opacity-90 transition-all shadow-xl hover:shadow-cta/30 transform hover:-translate-y-1 text-center"
+                            className="bg-cta text-white px-6 md:px-10 py-4 md:py-5 rounded-xl md:rounded-2xl text-base md:text-lg font-medium hover:bg-opacity-90 transition-all shadow-xl hover:shadow-cta/30 transform hover:-translate-y-1 text-center w-full sm:w-auto"
                         >
                             Erstgespräch vereinbaren
                         </a>
                         <a
                             href="#therapy"
-                            className="bg-white/80 backdrop-blur-md text-primary px-10 py-5 rounded-2xl text-lg font-medium hover:bg-white transition-all border border-primary/20 shadow-md hover:shadow-lg text-center"
+                            className="bg-white/80 backdrop-blur-md text-primary px-6 md:px-10 py-4 md:py-5 rounded-xl md:rounded-2xl text-base md:text-lg font-medium hover:bg-white transition-all border border-primary/20 shadow-md hover:shadow-lg text-center w-full sm:w-auto"
                         >
                             Meine Schwerpunkte
                         </a>
                     </div>
 
-                    <div className="flex items-center gap-5 pt-2 border-t border-gray-200/50">
-                        <div className="flex -space-x-4 hover:space-x-1 transition-all duration-300">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 pt-4 sm:pt-2 border-t border-gray-200/50">
+                        <div className="flex flex-wrap -space-x-3 sm:-space-x-4 hover:space-x-1 transition-all duration-300">
                             {socialProofImages.map((src, index) => (
                                 <img
                                     key={index}
                                     src={src}
                                     alt="Client"
-                                    className="w-12 h-12 rounded-full border-2 border-white object-cover shadow-sm hover:scale-110 transition-transform"
+                                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 border-white object-cover shadow-sm hover:scale-110 transition-transform"
                                 />
                             ))}
                         </div>
                         <div className="flex flex-col gap-0.5">
-                            <div className="flex text-yellow-500 text-base">
+                            <div className="flex text-yellow-500 text-sm sm:text-base">
                                 {[...Array(5)].map((_, i) => (
-                                    <FiStar key={i} fill="currentColor" className="w-5 h-5 drop-shadow-sm" />
+                                    <FiStar key={i} fill="currentColor" className="w-4 h-4 sm:w-5 sm:h-5 drop-shadow-sm" />
                                 ))}
                             </div>
-                            <p className="text-base font-medium text-gray-700">Vertrauensvoll & Diskret</p>
+                            <p className="text-sm sm:text-base font-medium text-gray-700">Vertrauensvoll & Diskret</p>
                         </div>
                     </div>
                 </div>
