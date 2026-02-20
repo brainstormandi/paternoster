@@ -15,7 +15,7 @@ export default function HeroSection() {
     return (
         <section
             id="home"
-            className="relative h-[85vh] min-h-[700px] flex items-center justify-center overflow-hidden"
+            className="relative min-h-[100vh] lg:h-[90vh] lg:min-h-[800px] flex items-start lg:items-center justify-center overflow-hidden"
         >
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
@@ -34,7 +34,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/5 z-10" />
 
             {/* Content */}
-            <div className="relative z-20 container mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center h-full pt-24 md:pt-20">
+            <div className="relative z-20 container mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center h-full pt-36 sm:pt-40 lg:pt-20">
                 <div className="text-left animate-slide-up bg-white/80 md:bg-white/60 backdrop-blur-xl p-6 sm:p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-white/60 shadow-2xl transition-all duration-300 hover:shadow-3xl hover:bg-white/70">
                     <span className="inline-block py-1 sm:py-1.5 px-3 sm:px-4 rounded-full bg-cta/10 text-cta font-medium text-sm sm:text-base mb-6 md:mb-8 border border-cta/20 tracking-wide">
                         Psychotherapie Paternoster
